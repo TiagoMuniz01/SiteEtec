@@ -87,16 +87,16 @@
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item mx-3">
                     <a class="nav-link active" style="font-weight: bold; color: white;" aria-current="page"
-                        href="#">Home</a>
+                        href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Cursos</a>
+                    <a class="nav-link" href="{{ route('cursos') }}">Cursos</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Departamentos</a>
+                    <a class="nav-link" href="{{ route('departamento') }}">Departamentos</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" aria-disabled="true">Contato</a>
+                    <a class="nav-link" href="{{ route('contato') }}">Contato</a>
                 </li>
             </ul>
         </div>

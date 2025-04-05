@@ -6,23 +6,18 @@ use Illuminate\Http\Request;
 
 class ControllerPrincipal extends Controller
 {
-    public function home(){
+    Public function home(){
         return view('site.Home');
     }
-/*
-    Public function rota1(){
-        return view('site.rota1');
+    Public function departamento(){
+        return view('site.Departamento');
     }
 
-    Public function rota2(){
-        return view('site.rota2');
+    Public function cursos(){
+        return view('site.Cursos');
     }
     
-    Public function rota3(){
-        return view('site.rota3');
+    Public function contato(){
+        return view('site.Contato');
     }
-
-    Public function rota4(){
-        return view('site.rota4');
-    }*/
 }
