@@ -16,61 +16,7 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <style>
-        .nav-link {
-            color: white;
-        }
-
-        .nav-link active {
-            font-weight: bold;
-        }
-
-        .carousel-item {
-            max-height: 500px;
-            position: relative;
-        }
-
-        .carousel-inner {
-            max-height: 500px;
-            position: relative;
-        }
-
-        .carousel-inner img {
-            object-fit: cover;
-            height: 100%;
-            width: auto;
-        }
-
-        .linha-decorativa {
-            width: 100%;
-            height: 15px;
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .quadrado {
-            width: 20%;
-            height: 100%;
-            background-color: #AE0F0A;
-            border-radius: 50px;
-        }
-
-        .linha {
-            height: 20%;
-            background-color: #AE0F0A;
-            flex-grow: 1;
-            margin-left: -1px;
-        }
-
-        h2{
-            color:#005C6D;
-        }
-        p{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 
 <body>
