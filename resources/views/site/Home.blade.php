@@ -182,6 +182,17 @@
         </div>
 
     </main>
+    <footer class="bg-dark text-ligth">
+        <div class="container-fluid py-5">
+            <div classs="row">
+                <div classs="col">
+                        <a href="https://sp.gov.br/sp">
+                            <img class="rounded mx-auto d-block" src="{{ asset('imagens/Logo - EtecZonaLeste.png') }}" alt="Bootstrap" width="300" height="80">
+                        </a>
+                </div>
+            </div>
+        </div> 
+    </footer >
 </body>
 
 </html>
