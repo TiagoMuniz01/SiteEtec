@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
@@ -30,8 +32,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" style="font-weight: bold; color: white;" aria-current="page"
-                        href="{{ route('home') }}">Home</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ route('cursos') }}">Cursos</a>
@@ -40,27 +41,76 @@
                     <a class="nav-link" href="{{ route('departamento') }}">Departamentos</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="{{ route('contato') }}">Contato</a>
+                    <a class="nav-link active" href="{{ route('contato') }}">Contato</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m-5">
+                    <br class="m-5">
+                    <section>
+
+                        <h2>Contato</h2>
+                        <div class="linha-decorativa">
+                            <div class="quadrado"></div>
+                            <div class="linha"></div>
+                        </div>
+
+                        <img src="{{ asset('imagens/imagem_contato.webp') }}" class="img-fluid mt-5">
 
 
-    </main>
-
-    <footer class="bg-dark text-ligth">
-        <div class="container-fluid py-5">
-            <div classs="row">
-                <div classs="col">
-                        <a href="https://sp.gov.br/sp">
-                            <img class="rounded mx-auto d-block" src="{{ asset('imagens/Logo - EtecZonaLeste.png') }}" alt="Bootstrap" width="300" height="80">
-                        </a>
+                        <!--Formulário-->
+                        <div class="bg-secondary-subtle text-secondary-emphasis p-4 mt-3">
+                            <div class="row">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Nome">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="seuemail@gmail.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Assunto</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Assunto">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Digite sua mensagem"></textarea>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary"
+                                style="--bs-btn-padding-y: .5%; --bs-btn-padding-x: 5%; --bs-btn-font-size: 1.2rem;">
+                                Enviar
+                            </button>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </div> 
-    </footer >
+        </div>
+    </main>
+
+    <footer class="bg-dark text-ligth mt-5">
+        <div class="container-fluid py-3">
+            <div classs="row">
+                <div classs="col">
+                    <a href="https://sp.gov.br/sp">
+                        <img class="rounded mx-auto d-block"
+                            src="{{ asset('imagens/logo-rodape-governo-do-estado-sp.png') }}" alt="Bootstrap"
+                            width="300" height="80">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

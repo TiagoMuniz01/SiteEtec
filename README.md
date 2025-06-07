@@ -411,3 +411,22 @@ Remover o Node.js.
 ```
 sudo apt remove nodejs
 ```
+
+Passos para fazer o PDF: 
+1 - Primeiro explicar o código front da página de contatos, o formulário.
+2 - Explicar como criar o banco e sincronizar
+    - Ir no arquivo .env e alterar as configurações do banco
+    - Executar o comando para criar o banco de dados no projeto através do php artisan
+    ```
+        php artisan migrate
+    ```
+    - Executar comandos para criar as tabelas do banco
+    ```
+        php artisan make:migrattion create_emails_table
+    ```
+    - Criar os campos no arquivo de migration criado, que é sua tabela no banco
+    - Executar as migrations para criar suas tabelas no banco real
+    ```
+        php artisan migrate
+    ```
+

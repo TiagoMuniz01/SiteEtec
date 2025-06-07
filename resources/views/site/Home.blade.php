@@ -32,8 +32,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" style="font-weight: bold; color: white;" aria-current="page"
-                        href="{{ route('home') }}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="{{ route('cursos') }}">Cursos</a>
@@ -47,8 +46,8 @@
             </ul>
         </div>
     </nav>
-    <main>
 
+    <main>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -128,12 +127,12 @@
         </div>
 
     </main>
-    <footer class="bg-dark text-ligth">
-        <div class="container-fluid py-5">
+    <footer class="bg-dark text-ligth mt-5">
+        <div class="container-fluid py-3">
             <div classs="row">
                 <div classs="col">
                         <a href="https://sp.gov.br/sp">
-                            <img class="rounded mx-auto d-block" src="{{ asset('imagens/Logo - EtecZonaLeste.png') }}" alt="Bootstrap" width="300" height="80">
+                            <img class="rounded mx-auto d-block" src="{{ asset('imagens/logo-rodape-governo-do-estado-sp.png') }}" alt="Bootstrap" width="300" height="80">
                         </a>
                 </div>
             </div>
