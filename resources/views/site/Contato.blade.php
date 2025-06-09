@@ -66,31 +66,33 @@
                         <!--Formulário-->
                         <div class="bg-secondary-subtle text-secondary-emphasis p-4 mt-3">
                             <div class="row">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Nome">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="seuemail@gmail.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Assunto</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Assunto">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="" rows="3"
-                                        placeholder="Digite sua mensagem"></textarea>
-                                </div>
+                                <form action="{{{ route('store') }}}" method="post">
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="nome"
+                                            placeholder="Digite seu nome completo" name="nome">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="seuemail@gmail.com" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="assunto" class="form-label">Assunto</label>
+                                        <input type="text" class="form-control" id="assunto" placeholder="Assunto"
+                                            name="assunto">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"
+                                            placeholder="Digite sua mensagem"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"
+                                        style="--bs-btn-padding-y: .5%; --bs-btn-padding-x: 5%; --bs-btn-font-size: 1.2rem;">
+                                        Enviar
+                                    </button>
+                                </form>
                             </div>
-                            <button type="button" class="btn btn-primary"
-                                style="--bs-btn-padding-y: .5%; --bs-btn-padding-x: 5%; --bs-btn-font-size: 1.2rem;">
-                                Enviar
-                            </button>
                         </div>
                     </section>
                 </div>
