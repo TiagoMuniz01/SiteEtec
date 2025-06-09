@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Emails</title>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -48,54 +48,7 @@
     </nav>
 
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col m-5">
-                    <br class="m-5">
-                    <section>
 
-                        <h2>Contato</h2>
-                        <div class="linha-decorativa">
-                            <div class="quadrado"></div>
-                            <div class="linha"></div>
-                        </div>
-
-                        <img src="{{ asset('imagens/imagem_contato.webp') }}" class="img-fluid mt-5">
-
-
-                        <!--Formulário-->
-                        <div class="bg-secondary-subtle text-secondary-emphasis p-4 mt-3">
-                            <div class="row">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Nome">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="seuemail@gmail.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Assunto</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Assunto">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="" rows="3"
-                                        placeholder="Digite sua mensagem"></textarea>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-primary"
-                                style="--bs-btn-padding-y: .5%; --bs-btn-padding-x: 5%; --bs-btn-font-size: 1.2rem;">
-                                Enviar
-                            </button>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
     </main>
 
     <footer class="bg-dark text-ligth mt-5">
@@ -112,5 +65,3 @@
         </div>
     </footer>
 </body>
-
-</html>
