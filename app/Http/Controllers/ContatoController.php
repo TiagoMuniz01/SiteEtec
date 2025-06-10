@@ -7,7 +7,7 @@ use App\Models\Email;
 
 class ContatoController extends Controller
 {
-    Public function index(){
+    Public function emails(){
         return view('site.emails');
     }
 
@@ -19,7 +19,7 @@ class ContatoController extends Controller
        
         //Cadastrar no banco de dados na tabela email os valores correspondentes
         $email = Email::create($request->all());
-
-        dd($email);
+        
+        return redirect()->route('emails');
     }
 }

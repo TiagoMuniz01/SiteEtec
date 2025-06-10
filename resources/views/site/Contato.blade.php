@@ -66,7 +66,7 @@
                         <!--Formulário-->
                         <div class="bg-secondary-subtle text-secondary-emphasis p-4 mt-3">
                             <div class="row">
-                                <form action="{{{ route('store') }}}" method="post">
+                                <form action="{{ route('store') }}" method="post">
                                     <div class="mb-3">
                                         <label for="nome" class="form-label">Nome</label>
                                         <input type="text" class="form-control" id="nome"
